@@ -5,7 +5,7 @@ export default defineConfig({
   title: "Micro Build Admin",
   description: "A VitePress Site For Micro Build Admin Document",
   head: [
-    ['link', { rel: 'icon', type: 'image/svg+xml', href: '/logo.png' }],
+    ['link', { rel: 'icon', type: 'image/svg+xml', href: '/mb-admin-doc/logo.png' }],
   ],
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
