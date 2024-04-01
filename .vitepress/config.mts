@@ -46,6 +46,10 @@ export default defineConfig({
           },
         ],
       },
+      {
+        text: '常用Hooks',
+        link: '/hooks/useWatermark',
+      },
     ],
 
     sidebar: {
@@ -246,6 +250,32 @@ export default defineConfig({
               link: '/components/video-viewer',
             },
           ],
+        },
+      ],
+      '/hooks/': [
+        {
+          text: 'useWatermark',
+          link: '/hooks/useWatermark',
+        },
+        {
+          text: 'useCrudSchemas',
+          link: '/hooks/useCrudSchemas',
+        },
+        {
+          text: 'useTagsView',
+          link: '/hooks/useTagsView',
+        },
+        {
+          text: 'useStorage',
+          link: '/hooks/useStorage',
+        },
+        {
+          text: 'useClipboard',
+          link: '/hooks/useClipboard',
+        },
+        {
+          text: 'useNetwork',
+          link: '/hooks/useNetwork',
         },
       ],
     },
