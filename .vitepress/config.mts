@@ -359,6 +359,10 @@ export default defineConfig({
         dateStyle: 'full',
         timeStyle: 'medium'
       }
+    },
+
+    search: {
+      provider: 'local'
     }
   }
 })
