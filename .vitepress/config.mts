@@ -54,6 +54,27 @@ export default defineConfig({
         text: '常见问题',
         link: '/guide/fqa',
       },
+      {
+        text: '相关链接',
+        items: [
+          {
+            text: 'Github 站点预览',
+            link: 'https://syh-micro-build.github.io/mb-admin/',
+          },
+          {
+            text: 'Github 源码',
+            link: 'https://github.com/syh-micro-build/mb-admin',
+          },
+          {
+            text: 'Github 文档源码',
+            link: 'https://github.com/syh-micro-build/mb-admin-doc',
+          },
+          {
+            text: 'Github 更新日志',
+            link: 'https://github.com/syh-micro-build/mb-admin/blob/master/CHANGELOG.md',
+          },
+        ],
+      },
     ],
 
     sidebar: {
