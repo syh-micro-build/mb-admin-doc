@@ -50,6 +50,10 @@ export default defineConfig({
         text: '常用Hooks',
         link: '/hooks/useWatermark',
       },
+      {
+        text: '常见问题',
+        link: '/guide/fqa',
+      },
     ],
 
     sidebar: {
