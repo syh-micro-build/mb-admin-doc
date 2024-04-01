@@ -75,6 +75,24 @@ export default defineConfig({
           },
         ],
       },
+      {
+        text: '交流群',
+        items: [
+          {
+            text: '技术交流群',
+            link: '/group/group',
+          },
+        ],
+      },
+      {
+        text: '捐赠',
+        items: [
+          {
+            text: '捐赠',
+            link: '/donate/donate',
+          },
+        ],
+      },
     ],
 
     sidebar: {
@@ -301,6 +319,18 @@ export default defineConfig({
         {
           text: 'useNetwork',
           link: '/hooks/useNetwork',
+        },
+      ],
+      '/group/': [
+        {
+          text: '技术交流群',
+          link: '/group/group',
+        },
+      ],
+      '/donate/': [
+        {
+          text: '捐赠',
+          link: '/donate/donate',
         },
       ],
     },
