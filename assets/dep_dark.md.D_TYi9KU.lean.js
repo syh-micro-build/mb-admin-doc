@@ -1,0 +1,1 @@
+import{_ as a,c as e,o as t,a2 as o}from"./chunks/framework.CWo5xHl-.js";const f=JSON.parse('{"title":"黑暗主题","description":"","frontmatter":{},"headers":[],"relativePath":"dep/dark.md","filePath":"dep/dark.md"}'),r={name:"dep/dark.md"},d=o("",6),c=[d];function s(n,_,i,l,p,h){return t(),e("div",null,c)}const u=a(r,[["render",s]]);export{f as __pageData,u as default};

@@ -1,0 +1,1 @@
+import{_ as s,c as i,o as a,a2 as n}from"./chunks/framework.CWo5xHl-.js";const F=JSON.parse('{"title":"权限","description":"","frontmatter":{},"headers":[],"relativePath":"guide/auth.md","filePath":"guide/auth.md"}'),h={name:"guide/auth.md"},k=n("",30),t=[k];function p(l,e,E,r,d,g){return a(),i("div",null,t)}const o=s(h,[["render",p]]);export{F as __pageData,o as default};

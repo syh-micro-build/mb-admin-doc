@@ -1,0 +1,1 @@
+import{_ as s,c as a,o as i,a2 as e}from"./chunks/framework.CWo5xHl-.js";const u=JSON.parse('{"title":"样式","description":"","frontmatter":{},"headers":[],"relativePath":"guide/design.md","filePath":"guide/design.md"}'),t={name:"guide/design.md"},l=e("",12),n=[l];function h(p,r,k,d,o,c){return i(),a("div",null,n)}const m=s(t,[["render",h]]);export{u as __pageData,m as default};
