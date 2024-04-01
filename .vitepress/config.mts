@@ -346,6 +346,11 @@ export default defineConfig({
 
     footer: {
       copyright: 'MIT Licensed | Copyright (c) 2024 syh-micro-build'
+    },
+
+    editLink: {
+      pattern: 'https://github.com/syh-micro-build/mb-admin-doc/blob/main/:path',
+      text: '在 GitHub 上编辑此页面'
     }
   }
 })
