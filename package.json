@@ -2,6 +2,7 @@
   "name": "mb-admin-doc",
   "version": "1.0.0",
   "description": "Micro Build Admin Document",
+  "author": "ShanYi-Hui <shanyi.hui@qq.com> (https://github.com/ShanYi-Hui)",
   "main": "index.js",
   "devDependencies": {
     "vitepress": "^1.0.1"
@@ -13,6 +14,11 @@
     "docs:preview": "vitepress preview",
     "docs:preview-github": "vitepress preview --base /mb-admin-doc/"
   },
+  "packageManager": "npm@8.19.2",
+  "engines": {
+    "node": ">=18.12.1",
+    "npm": ">=8.19.2"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/syh-micro-build/mb-admin-doc.git"
@@ -20,7 +26,6 @@
   "keywords": [
     "mb-admin"
   ],
-  "author": "ShanYi-Hui <shanyi.hui@qq.com> (https://github.com/ShanYi-Hui)",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/syh-micro-build/mb-admin-doc/issues"
