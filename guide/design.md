@@ -6,7 +6,7 @@
 
 默认使用 `less` 作为预处理语言，建议在使用前或者遇到疑问时学习一下 [Less](http://lesscss.org/) 的相关特性。
 
-项目中使用的通用样式，都存放于 [src/style/](https://github.com/syh-micro-build/mb-admin/tree/master/src/styles) 下面。
+项目中使用的通用样式，都存放于 [src/style/](https://github.com/syh-micro-build/mb-admin/tree/main/src/styles) 下面。
 
 ```bash
 .

@@ -1,6 +1,6 @@
 # 路由
 
-项目路由配置存放于 [src/router/index.ts](https://github.com/syh-micro-build/mb-admin/blob/master/src/router/index.ts) 中。
+项目路由配置存放于 [src/router/index.ts](https://github.com/syh-micro-build/mb-admin/blob/main/src/router/index.ts) 中。
 
 为了方便阅读和查找，目前项目中并没有去对路由进行拆分，而是统一写在了一起，如果需要拆分，可自行更改。
 
@@ -52,7 +52,7 @@
 
 :::
 
-在 [types/router.d.ts](https://github.com/syh-micro-build/mb-admin/blob/master/types/router.d.ts) 中添加对应的类型，之后就可以在路由中添加你需要的配置项了。
+在 [types/router.d.ts](https://github.com/syh-micro-build/mb-admin/blob/main/types/router.d.ts) 中添加对应的类型，之后就可以在路由中添加你需要的配置项了。
 
 ```ts
 declare module 'vue-router' {

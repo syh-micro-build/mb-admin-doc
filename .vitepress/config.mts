@@ -25,7 +25,27 @@ export default defineConfig({
           },
         ],
       },
-      { text: 'Examples', link: '/markdown-examples' }
+      {
+        text: '组件',
+        items: [
+          {
+            text: '介绍',
+            link: '/components/introduction',
+          },
+          {
+            text: '全局组件',
+            link: '/components/icon',
+          },
+          {
+            text: '功能组件',
+            link: '/components/form',
+          },
+          {
+            text: '函数式组件',
+            link: '/components/image-viewer',
+          },
+        ],
+      },
     ],
 
     sidebar: {
@@ -94,6 +114,136 @@ export default defineConfig({
             {
               text: '前言',
               link: '/guide/fqa',
+            },
+          ],
+        },
+      ],
+      '/components/': [
+        {
+          text: '组件',
+          items: [
+            {
+              text: '前言',
+              link: '/components/introduction',
+            },
+          ],
+        },
+        {
+          text: '全局组件',
+          items: [
+            {
+              text: 'Icon 图标组件',
+              link: '/components/icon',
+            },
+            {
+              text: 'Permission 权限组件',
+              link: '/components/permission',
+            },
+            {
+              text: 'BaseButton 按钮组件',
+              link: '/components/button',
+            },
+          ],
+        },
+        {
+          text: '功能组件',
+          items: [
+            {
+              text: 'Form 表单组件',
+              link: '/components/form',
+            },
+            {
+              text: 'Table 表格组件',
+              link: '/components/table',
+            },
+            {
+              text: 'Editor 富文本组件',
+              link: '/components/editor',
+            },
+            {
+              text: 'Search 查询组件',
+              link: '/components/search',
+            },
+            {
+              text: 'Descriptions 描述组件',
+              link: '/components/descriptions',
+            },
+            {
+              text: 'Dialog 弹窗组件',
+              link: '/components/dialog',
+            },
+            {
+              text: 'Echart 图表组件',
+              link: '/components/echart',
+            },
+            {
+              text: 'CountTo 数字动画组件',
+              link: '/components/count-to',
+            },
+            {
+              text: 'Qrcode 二维码组件',
+              link: '/components/qrcode',
+            },
+            {
+              text: 'Highlight 高亮组件',
+              link: '/components/highlight',
+            },
+            {
+              text: 'Infotip 信息提示组件',
+              link: '/components/infotip',
+            },
+            {
+              text: 'Error 缺省组件',
+              link: '/components/error',
+            },
+            {
+              text: 'ContentDetailWrap 详情包裹组件',
+              link: '/components/content-detail-wrap',
+            },
+            {
+              text: 'InputPassword 密码输入框组件',
+              link: '/components/input-password',
+            },
+            {
+              text: 'Footer 页脚组件',
+              link: '/components/footer',
+            },
+            {
+              text: 'JsonEditor JSON编辑器组件',
+              link: '/components/json-editor',
+            },
+            {
+              text: '图标选择器组件',
+              link: '/components/icon-picker',
+            },
+            {
+              text: '瀑布流组件',
+              link: '/components/waterfall',
+            },
+            {
+              text: '视频播放器组件',
+              link: '/components/video-player',
+            },
+            {
+              text: '头像列表组件',
+              link: '/components/avatars',
+            },
+            {
+              text: '我同意组件',
+              link: '/components/i-agree',
+            },
+          ],
+        },
+        {
+          text: '函数式组件',
+          items: [
+            {
+              text: 'ImageViewer 图片预览组件',
+              link: '/components/image-viewer',
+            },
+            {
+              text: 'VideoViewer  图片预览组件',
+              link: '/components/video-viewer',
             },
           ],
         },

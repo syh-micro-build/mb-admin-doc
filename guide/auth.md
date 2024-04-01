@@ -23,7 +23,7 @@
 
 ## 实现
 
-1. 在[src/stores/permission.ts](https://github.com/syh-micro-build/mb-admin/blob/master/src/stores/permission.ts) 中 `generateRoutes()` 进行更改。
+1. 在[src/stores/permission.ts](https://github.com/syh-micro-build/mb-admin/blob/main/src/stores/permission.ts) 中 `generateRoutes()` 进行更改。
 
 接收的 `type` 参数，目前只是针对于本项目的模拟情况，如果不需要或者不适用，可自行改动。
 
@@ -65,7 +65,7 @@ generateRoutes(
 
 ### 前端控制实现
 
-2. 在[src/utils/routerHelper.ts](https://github.com/syh-micro-build/mb-admin/blob/master/src/utils/routerHelper.ts) 中 `generateRoutesByFrontEnd ()` 进行更改。目前本项目的前端权限控制，是根据 `path` 是否相同来进行过滤演示的，如果不符合需求，需要手动更改以下判断逻辑。
+2. 在[src/utils/routerHelper.ts](https://github.com/syh-micro-build/mb-admin/blob/main/src/utils/routerHelper.ts) 中 `generateRoutesByFrontEnd ()` 进行更改。目前本项目的前端权限控制，是根据 `path` 是否相同来进行过滤演示的，如果不符合需求，需要手动更改以下判断逻辑。
 
 ```ts
 // 前端控制路由生成
@@ -121,7 +121,7 @@ export const generateRoutesByFrontEnd  = (
 
 ### 后台动态获取
 
-3. 在[src/utils/routerHelper.ts](https://github.com/syh-micro-build/mb-admin/blob/master/src/utils/routerHelper.ts) 中 `generateRoutesByServer ()` 进行更改。
+3. 在[src/utils/routerHelper.ts](https://github.com/syh-micro-build/mb-admin/blob/main/src/utils/routerHelper.ts) 中 `generateRoutesByServer ()` 进行更改。
 
 ```ts
 // 后端控制路由生成
@@ -159,7 +159,7 @@ export const generateRoutesByServer  = (routes: AppCustomRouteRecordRaw[]): AppR
 
 ### 公用部分修改
 
-4. 在[src/views/Login/components/LoginForm.vue](https://github.com/syh-micro-build/mb-admin/blob/master/src/views/Login/components/LoginForm.vue) 中 `getRole()` 进行更改。
+4. 在[src/views/Login/components/LoginForm.vue](https://github.com/syh-micro-build/mb-admin/blob/main/src/views/Login/components/LoginForm.vue) 中 `getRole()` 进行更改。
 
 需要开发者自行根据需求进行代码变更。
 
@@ -190,7 +190,7 @@ const getRole = async () => {
 };
 ```
 
-5. 在[src/permission.ts](https://github.com/syh-micro-build/mb-admin/blob/master/src/permission.ts)，以下这种情况，是考虑到手动刷新，所以需要获取到缓存中的动态菜单重新渲染。
+5. 在[src/permission.ts](https://github.com/syh-micro-build/mb-admin/blob/main/src/permission.ts)，以下这种情况，是考虑到手动刷新，所以需要获取到缓存中的动态菜单重新渲染。
 
 ```ts
 // 开发者可根据实际情况进行修改

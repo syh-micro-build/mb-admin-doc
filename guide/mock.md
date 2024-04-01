@@ -37,7 +37,7 @@ server: {
 
 在本项目中，所有的接口数据都是使用 `Mock` 模拟
 
-接口统一存放于 [src/api/](https://github.com/syh-micro-build/mb-admin/tree/master/src/api) 下面管理
+接口统一存放于 [src/api/](https://github.com/syh-micro-build/mb-admin/tree/main/src/api) 下面管理
 
 以获取列表接口为例:
 
@@ -77,11 +77,11 @@ export const delTableListApi = (ids: string[] | number[]): Promise<IResponse> =>
 
 ## axios 配置
 
-**axios** 请求封装存放于 [src/axios](https://github.com/syh-micro-build/mb-admin/blob/master/src/axios) 中。
+**axios** 请求封装存放于 [src/axios](https://github.com/syh-micro-build/mb-admin/blob/main/src/axios) 中。
 
 ### 全局 axios 配置说明
 
-axios 全局配置放在 [src/constants](https://github.com/syh-micro-build/mb-admin/blob/master/src/constants) 中。
+axios 全局配置放在 [src/constants](https://github.com/syh-micro-build/mb-admin/blob/main/src/constants) 中。
 
 ::: tip 注意
 

@@ -5,10 +5,10 @@
 ## 环境变量配置
 
 项目的环境变量配置位于项目根目录下的，这里主要配置四个个环境变量，分别为：
-- [本地开发环境](https://github.com/syh-micro-build/mb-admin/blob/master/.env.base)
-- [开发环境](https://github.com/syh-micro-build/mb-admin/blob/master/.env.dev)
-- [测试环境](https://github.com/syh-micro-build/mb-admin/blob/master/.env.test)
-- [生产环境](https://github.com/syh-micro-build/mb-admin/blob/master/.env.pro)
+- [本地开发环境](https://github.com/syh-micro-build/mb-admin/blob/main/.env.base)
+- [开发环境](https://github.com/syh-micro-build/mb-admin/blob/main/.env.dev)
+- [测试环境](https://github.com/syh-micro-build/mb-admin/blob/main/.env.test)
+- [生产环境](https://github.com/syh-micro-build/mb-admin/blob/main/.env.pro)
 
 在开发调试的时候，会读取 `.env.base` 里面的数据。其他环境亦是如此，根据打包命令的不同，来读取不同的环境变量。
 
@@ -148,7 +148,7 @@ VITE_APP_TITLE = MicroBuild
 
 ### 配置文件路径
 
-[src/stores/app.ts](https://github.com/syh-micro-build/mb-admin/blob/master/src/stores/app.ts)
+[src/stores/app.ts](https://github.com/syh-micro-build/mb-admin/blob/main/src/stores/app.ts)
 
 ### 说明
 
@@ -211,7 +211,7 @@ export const appModules: AppState = {
 
 ### 如何添加新属性
 
-如果想要添加新的全局配置属性，需要在 [src/stores/app.ts](https://github.com/syh-micro-build/mb-admin/blob/master/src/stores/app.ts) 中 `AppState` 添加对应的类型，并在 `appModules` 对象中，赋予新属性的默认值。
+如果想要添加新的全局配置属性，需要在 [src/stores/app.ts](https://github.com/syh-micro-build/mb-admin/blob/main/src/stores/app.ts) 中 `AppState` 添加对应的类型，并在 `appModules` 对象中，赋予新属性的默认值。
 
 ## 样式配置
 
@@ -221,7 +221,7 @@ export const appModules: AppState = {
 
 由于 `element-plus` 的组件还没有全部采用动态配置前缀，所以目前还是使用 `el` 前缀。
 
-- 在 [src/styles/variables.module.less](https://github.com/syh-micro-build/mb-admin/blob/master/src/styles/variables.module.less) 内配置
+- 在 [src/styles/variables.module.less](https://github.com/syh-micro-build/mb-admin/blob/main/src/styles/variables.module.less) 内配置
 
 ```less
 // 命名空间

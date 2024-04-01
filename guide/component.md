@@ -29,7 +29,7 @@ const prefixCls = getPrefixCls('backtop')
 
 ## 全局注册 (不推荐)
 
-如果觉得按需引入太麻烦，可以进行全局注册，在[src/components/index.ts](https://github.com/syh-micro-build/mb-admin/blob/master/src/components/index.ts)，添加需要注册的组件。
+如果觉得按需引入太麻烦，可以进行全局注册，在[src/components/index.ts](https://github.com/syh-micro-build/mb-admin/blob/main/src/components/index.ts)，添加需要注册的组件。
 
 目前只有 `Icon` 组件进行了全局注册。
 
@@ -43,7 +43,7 @@ export const setupGlobCom = (app: App<Element>): void => {
 
 ```
 
-如果 `element-plus` 的组件需要全局注册，在 [src/plugins/elementPlus/index.ts](https://github.com/syh-micro-build/mb-admin/blob/master/src/plugins/elementPlus/index.ts) 添加需要注册的组件。
+如果 `element-plus` 的组件需要全局注册，在 [src/plugins/elementPlus/index.ts](https://github.com/syh-micro-build/mb-admin/blob/main/src/plugins/elementPlus/index.ts) 添加需要注册的组件。
 
 目前 `element-plus` 中只有 `ElLoading` 与 `ElScrollbar` 进行了全局注册。
 
