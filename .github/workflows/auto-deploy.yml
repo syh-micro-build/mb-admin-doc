@@ -48,7 +48,7 @@ jobs:
         run: npm install
       # 打包
       - name: Build application 🔧
-        run: npm run docs:build
+        run: npm run docs:build-github
 
       # 部署 https://github.com/JamesIves/github-pages-deploy-action
       - name: Deploy 🚀
@@ -57,7 +57,7 @@ jobs:
         with:
           token: ${{ secrets.MB_ADMIN_TOKEN }}
           branch: gh-pages # default: gh-pages
-          folder: ./.vitepress/dist
+          folder: .vitepress/dist
           clean: true # Automatically remove deleted files from the deploy branch
           # commit-message: ${{ github.event.head_commit.message }} # default: `Deploying to gh-pages from @ 3238feb 🚀`
           # commit-message: "deploy: ${{ github.sha }} (${{ github.event.head_commit.message }}) 🚀 "

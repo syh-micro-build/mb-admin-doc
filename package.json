@@ -9,7 +9,9 @@
   "scripts": {
     "docs:dev": "vitepress dev",
     "docs:build": "vitepress build",
-    "docs:preview": "vitepress preview"
+    "docs:build-github": "vitepress build --base /mb-admin-doc/",
+    "docs:preview": "vitepress preview",
+    "docs:preview-github": "vitepress preview --base /mb-admin-doc/"
   },
   "repository": {
     "type": "git",
