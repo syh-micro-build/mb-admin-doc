@@ -1,0 +1,1 @@
+import{_ as i,c as s,o as a,a2 as t}from"./chunks/framework.D2XzT7iW.js";const E=JSON.parse('{"title":"项目规范","description":"","frontmatter":{},"headers":[],"relativePath":"dep/lint.md","filePath":"dep/lint.md"}'),e={name:"dep/lint.md"},l=t("",51),n=[l];function h(r,p,o,k,d,c){return a(),s("div",null,n)}const u=i(e,[["render",h]]);export{E as __pageData,u as default};
