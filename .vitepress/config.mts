@@ -335,6 +335,11 @@ export default defineConfig({
       ],
     },
 
+    outline: {
+      level: 'deep',
+      label: '本页目录',
+    },
+
     socialLinks: [
       { icon: 'github', link: 'https://github.com/syh-micro-build/mb-admin' }
     ],
