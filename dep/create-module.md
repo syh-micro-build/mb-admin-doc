@@ -21,12 +21,12 @@ npm run plop
 运行
 
 ```shell
-npm run p
+npm run plop
 ```
 
 选择 `view` 之后，输入路径，默认为 `views/NewView`，接着输入模块名，如 `newPage`，既可在 `src/views/NewView` 目录下创建对应的视图文件`NewPage.vue`。
 
-组件名会自动转换为大驼峰命名，类名会自动转换为连字符命名。
+视图名会自动转换为大驼峰命名，类名会自动转换为连字符命名。
 
 ## 如何扩展
 
