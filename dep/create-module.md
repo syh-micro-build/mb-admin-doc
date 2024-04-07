@@ -9,12 +9,12 @@
 运行
 
 ```shell
-npm run p
+npm run plop
 ```
 
-选择 `component` 之后，输入组件名，如 `newCom`，既可在 `src/components` 目录下创建对应的组件。
+选择 `component` 之后，输入组件名，如 `newComponent`，既可在 `src/components` 目录下创建对应的组件。
 
-组件名开头如果是小写，会自动转换为大写。
+组件名会自动转换为大驼峰命名，类名会自动转换为连字符命名。
 
 ## 生成视图
 
@@ -24,7 +24,9 @@ npm run p
 npm run p
 ```
 
-选择 `view` 之后，输入路径，默认为 `views`，接着输入模块名，如 `newView`，既可在 `src/${views}` 目录下创建对应的视图文件。
+选择 `view` 之后，输入路径，默认为 `views/NewView`，接着输入模块名，如 `newPage`，既可在 `src/views/NewView` 目录下创建对应的视图文件`NewPage.vue`。
+
+组件名会自动转换为大驼峰命名，类名会自动转换为连字符命名。
 
 ## 如何扩展
 
