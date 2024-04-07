@@ -1,6 +1,6 @@
 {
   "name": "mb-admin-doc",
-  "version": "1.0.0",
+  "version": "1.2.0",
   "description": "Micro Build Admin Document",
   "author": "ShanYi-Hui <shanyi.hui@qq.com> (https://github.com/ShanYi-Hui)",
   "main": "index.js",
