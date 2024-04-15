@@ -66,12 +66,36 @@ export default defineConfig({
             link: 'https://github.com/syh-micro-build/mb-admin',
           },
           {
+            text: 'Github 文档',
+            link: 'https://syh-micro-build.github.io/mb-admin-doc/',
+          },
+          {
             text: 'Github 文档源码',
             link: 'https://github.com/syh-micro-build/mb-admin-doc',
           },
           {
             text: 'Github 更新日志',
             link: 'https://github.com/syh-micro-build/mb-admin/blob/master/CHANGELOG.md',
+          },
+          {
+            text: 'Gitee 站点预览',
+            link: 'http://shanyi-hui.gitee.io/mb-admin',
+          },
+          {
+            text: 'Gitee 源码',
+            link: 'https://gitee.com/shanyi-hui/mb-admin',
+          },
+          {
+            text: 'Gitee 文档',
+            link: 'http://shanyi-hui.gitee.io/mb-admin-doc',
+          },
+          {
+            text: 'Gitee 文档源码',
+            link: 'https://gitee.com/shanyi-hui/mb-admin-doc',
+          },
+          {
+            text: 'Gitee 更新日志',
+            link: 'https://gitee.com/shanyi-hui/mb-admin/blob/main/CHANGELOG.md',
           },
         ],
       },
