@@ -6,8 +6,8 @@
 
 ### qq群：415849653
 
-<img src="https://raw.githubusercontent.com/ShanYi-Hui/images/main/qqgroup.png" style="width: 200px;" />
+<img src="https://cdn.jsdelivr.net/gh/ShanYi-Hui/images/qqgroup.png" style="width: 200px;" />
 
 ### 微信群
 
-<img src="https://raw.githubusercontent.com/ShanYi-Hui/images/main/weixingroup.png" style="width: 200px;" />
+<img src="https://cdn.jsdelivr.net/gh/ShanYi-Hui/images/weixingroup.png" style="width: 200px;" />

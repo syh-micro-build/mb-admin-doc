@@ -4,8 +4,8 @@
 
 ## 支付宝
 
-<img src="https://raw.githubusercontent.com/ShanYi-Hui/images/main/alipay.png" style="width: 200px;" />
+<img src="https://cdn.jsdelivr.net/gh/ShanYi-Hui/images/alipay.png" style="width: 200px;" />
 
 ## 微信
 
-<img src="https://raw.githubusercontent.com/ShanYi-Hui/images/main/weixinpay.png"  style="width: 200px;"/>
+<img src="https://cdn.jsdelivr.net/gh/ShanYi-Hui/images/weixinpay.png"  style="width: 200px;"/>
