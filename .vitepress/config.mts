@@ -55,48 +55,62 @@ export default defineConfig({
         link: '/guide/fqa',
       },
       {
-        text: '相关链接',
+        text: '生态系统',
         items: [
           {
-            text: 'Github 站点预览',
-            link: 'https://syh-micro-build.github.io/mb-admin/',
+            text: '官方库',
+            items: [
+              {
+                text: 'mb-cli 脚手架',
+                link: 'https://github.com/syh-micro-build/mb-cli?tab=readme-ov-file',
+              },
+            ]
           },
           {
-            text: 'Github 源码',
-            link: 'https://github.com/syh-micro-build/mb-admin',
-          },
-          {
-            text: 'Github 文档',
-            link: 'https://syh-micro-build.github.io/mb-admin-doc/',
-          },
-          {
-            text: 'Github 文档源码',
-            link: 'https://github.com/syh-micro-build/mb-admin-doc',
-          },
-          {
-            text: 'Github 更新日志',
-            link: 'https://github.com/syh-micro-build/mb-admin/blob/master/CHANGELOG.md',
-          },
-          {
-            text: 'Gitee 站点预览',
-            link: 'http://shanyi-hui.gitee.io/mb-admin',
-          },
-          {
-            text: 'Gitee 源码',
-            link: 'https://gitee.com/shanyi-hui/mb-admin',
-          },
-          {
-            text: 'Gitee 文档',
-            link: 'http://shanyi-hui.gitee.io/mb-admin-doc',
-          },
-          {
-            text: 'Gitee 文档源码',
-            link: 'https://gitee.com/shanyi-hui/mb-admin-doc',
-          },
-          {
-            text: 'Gitee 更新日志',
-            link: 'https://gitee.com/shanyi-hui/mb-admin/blob/main/CHANGELOG.md',
-          },
+            text: '相关链接',
+            items: [
+              {
+                text: 'Github 站点预览',
+                link: 'https://syh-micro-build.github.io/mb-admin/',
+              },
+              {
+                text: 'Github 源码',
+                link: 'https://github.com/syh-micro-build/mb-admin',
+              },
+              {
+                text: 'Github 文档',
+                link: 'https://syh-micro-build.github.io/mb-admin-doc/',
+              },
+              {
+                text: 'Github 文档源码',
+                link: 'https://github.com/syh-micro-build/mb-admin-doc',
+              },
+              {
+                text: 'Github 更新日志',
+                link: 'https://github.com/syh-micro-build/mb-admin/blob/master/CHANGELOG.md',
+              },
+              {
+                text: 'Gitee 站点预览',
+                link: 'http://shanyi-hui.gitee.io/mb-admin',
+              },
+              {
+                text: 'Gitee 源码',
+                link: 'https://gitee.com/shanyi-hui/mb-admin',
+              },
+              {
+                text: 'Gitee 文档',
+                link: 'http://shanyi-hui.gitee.io/mb-admin-doc',
+              },
+              {
+                text: 'Gitee 文档源码',
+                link: 'https://gitee.com/shanyi-hui/mb-admin-doc',
+              },
+              {
+                text: 'Gitee 更新日志',
+                link: 'https://gitee.com/shanyi-hui/mb-admin/blob/main/CHANGELOG.md',
+              },
+            ]
+          }
         ],
       },
       {
