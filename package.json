@@ -10,9 +10,9 @@
   "scripts": {
     "docs:dev": "vitepress dev",
     "docs:build": "vitepress build",
-    "docs:build-github": "vitepress build --base /mb-admin-doc/",
+    "docs:build-github": "vitepress build --base /",
     "docs:preview": "vitepress preview",
-    "docs:preview-github": "vitepress preview --base /mb-admin-doc/"
+    "docs:preview-github": "vitepress preview --base /"
   },
   "packageManager": "npm@8.19.2",
   "engines": {
