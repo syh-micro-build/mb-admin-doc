@@ -15,7 +15,7 @@ hero:
       link: /guide/introduction
     - theme: alt
       text: 在线预览
-      link: https://syh-micro-build.github.io/mb-admin/
+      link: https://admin.mbuild.top/
 
 features:
   - icon: ✨

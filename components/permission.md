@@ -6,7 +6,7 @@ Permission 组件位于 [src/components/Permission](https://github.com/syh-micro
 
 ## 在线例子
 
-[在线例子](https://syh-micro-build.github.io/mb-admin/authorization/test)
+[在线例子](https://admin.mbuild.top/authorization/test)
 
 ## 用法
 

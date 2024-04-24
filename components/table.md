@@ -54,7 +54,7 @@ const data = reactive([
 
 推荐配合 `useTable` 来使用
 
-复杂点的例子，请[在线预览](https://syh-micro-build.github.io/mb-admin/components/table/use-table)
+复杂点的例子，请[在线预览](https://admin.mbuild.top/components/table/use-table)
 
 ```vue
 <script setup lang="tsx">

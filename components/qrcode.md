@@ -6,7 +6,7 @@ Qrcode 组件位于 [src/components/Qrcode](https://github.com/syh-micro-build/m
 
 ## 用法
 
-更复杂点的例子，请[在线预览](https://syh-micro-build.github.io/mb-admin/components/qrcode)
+更复杂点的例子，请[在线预览](https://admin.mbuild.top/components/qrcode)
 
 ```vue
 <script setup lang="ts">

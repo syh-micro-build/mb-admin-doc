@@ -5,7 +5,7 @@ export default defineConfig({
   title: "Micro Build Admin",
   description: "A VitePress Site For Micro Build Admin Document",
   head: [
-    ['link', { rel: 'icon', type: 'image/svg+xml', href: '/mb-admin-doc/logo.png' }],
+    ['link', { rel: 'icon', type: 'image/svg+xml', href: '/logo.png' }],
   ],
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
@@ -71,7 +71,7 @@ export default defineConfig({
             items: [
               {
                 text: 'Github 站点预览',
-                link: 'https://syh-micro-build.github.io/mb-admin/',
+                link: 'https://admin.mbuild.top',
               },
               {
                 text: 'Github 源码',
@@ -79,7 +79,7 @@ export default defineConfig({
               },
               {
                 text: 'Github 文档',
-                link: 'https://syh-micro-build.github.io/mb-admin-doc/',
+                link: 'https://admindoc.mbuild.top',
               },
               {
                 text: 'Github 文档源码',
