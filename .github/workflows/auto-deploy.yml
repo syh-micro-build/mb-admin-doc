@@ -46,11 +46,12 @@ jobs:
       # 安装依赖
       - name: Install dependencies
         run: npm install
-      # 打包
+
+      # 打包-GitHub
       - name: Build application 🔧
         run: npm run docs:build-github
 
-      # 部署 https://github.com/JamesIves/github-pages-deploy-action
+      # 部署-GitHub
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@v4
         if: github.ref == 'refs/heads/main'
@@ -61,3 +62,50 @@ jobs:
           clean: true # Automatically remove deleted files from the deploy branch
           # commit-message: ${{ github.event.head_commit.message }} # default: `Deploying to gh-pages from @ 3238feb 🚀`
           # commit-message: "deploy: ${{ github.sha }} (${{ github.event.head_commit.message }}) 🚀 "
+
+      # 打包-Gitee
+      - name: Build application
+        run: npm run docs:build-gitee
+
+      # 部署-Gitee
+      - name: Deploy 🚀
+        uses: JamesIves/github-pages-deploy-action@v4
+        if: github.ref == 'refs/heads/main'
+        with:
+          token: ${{ secrets.MB_ADMIN_TOKEN }}
+          branch: gh-pages-gitee # default: gh-pages
+          folder: .vitepress/dist
+          clean: true # Automatically remove deleted files from the deploy branch
+          # commit-message: ${{ github.event.head_commit.message }} # default: `Deploying to gh-pages from @ 3238feb 🚀`
+          # commit-message: "deploy: ${{ github.sha }} (${{ github.event.head_commit.message }}) 🚀 "
+
+  # 同步至 Gitee
+  sync-to-gitee:
+    # GitHub 构建部署成功后触发
+    needs: build-and-deploy
+    runs-on: ubuntu-latest
+    steps:
+      ## 同步代码
+      - name: Sync Code # 名字随便起
+        uses: wearerequired/git-mirror-action@v1
+        env:
+          # 注意在 Settings->Secrets 配置 GITEE_RSA_PRIVATE_KEY
+          SSH_PRIVATE_KEY: ${{ secrets.GITEE_RSA_PRIVATE_KEY }}
+        with:
+          # 注意替换为你的 GitHub 源仓库地址
+          source-repo: git@github.com:syh-micro-build/mb-admin-doc.git
+          # 注意替换为你的 Gitee 目标仓库地址
+          destination-repo: git@gitee.com:shanyi-hui/mb-admin-doc.git
+
+      - name: Build Pages
+        uses: yanglbme/gitee-pages-action@main
+        with:
+          # 注意替换为你的 Gitee 用户名
+          gitee-username: ShanYi-Hui
+          # 注意在 Settings->Secrets 配置 GITEE_PASSWORD
+          gitee-password: ${{ secrets.GITEE_PASSWORD }}
+          # 注意替换为你的 Gitee 仓库，仓库名严格区分大小写，请准确填写，否则会出错
+          gitee-repo: ShanYi-Hui/mb-admin-doc
+          # 要部署的分支，默认是 master，若是其他分支，则需要指定（指定的分支必须存在）
+          branch: gh-pages-gitee
+          https: true

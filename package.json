@@ -11,8 +11,10 @@
     "docs:dev": "vitepress dev",
     "docs:build": "vitepress build",
     "docs:build-github": "vitepress build --base /",
+    "docs:build-gitee": "vitepress build --base /mb-admin-doc/",
     "docs:preview": "vitepress preview",
-    "docs:preview-github": "vitepress preview --base /"
+    "docs:preview-github": "vitepress preview --base /",
+    "docs:preview-gitee": "vitepress preview --base /mb-admin-doc/"
   },
   "packageManager": "npm@8.19.2",
   "engines": {
