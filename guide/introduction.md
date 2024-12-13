@@ -54,6 +54,7 @@
 ├── .commitlintrc.cjs # git commit 提交规范配置
 ├── .env.base # 本地开发环境 环境变量配置
 ├── .env.dev # 打包到开发环境 环境变量配置
+├── .env.gitee # 针对 gitee 部署的环境变量 可忽略
 ├── .env.github # 针对 github 部署的环境变量 可忽略
 ├── .env.pro # 打包到生产环境 环境变量配置
 ├── .env.test # 打包到测试环境 环境变量配置

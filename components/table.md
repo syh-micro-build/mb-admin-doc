@@ -10,6 +10,8 @@ Table 组件位于 [src/components/Table](https://github.com/syh-micro-build/mb-
 
 ## 用法
 
+目前支持的表格组件，你可以在 [在线预览](https://admin.mbuild.top/#/components/table/default-table) 中看到。
+
 ### 基础用法
 
 ```vue
@@ -54,7 +56,7 @@ const data = reactive([
 
 推荐配合 `useTable` 来使用
 
-复杂点的例子，请[在线预览](https://admin.mbuild.top/components/table/use-table)
+复杂点的例子，请[在线预览](https://admin.mbuild.top/#/components/table/use-table)
 
 ```vue
 <script setup lang="tsx">

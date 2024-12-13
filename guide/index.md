@@ -85,7 +85,7 @@ npm run dev
 ```json
 "scripts": {
   // 本地开发环境运行
-  "dev": "vite --mode base",
+  "dev": "vite --mode base --host",
   // 指定环境打包 (dev, test, pro)，例如：npm run build pro
   "build": "run-p type-check \"build-only -- --mode {1}\" --",
   // 本地预览 (dev, test, pro)，例如：npm run preview pro
@@ -93,20 +93,22 @@ npm run dev
   // 仅打包 (可忽略)
   "build-only": "vite build",
   // 类型检查
-  "type-check": "vue-tsc --build --force",
+  "type-check": "vue-tsc --build",
   // 代码规范检查
-  "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts --fix --ignore-path .gitignore",
+  "lint": "eslint . --fix \"src/**/*.{js,ts,tsx,vue,html}\"",
   // 代码格式化
-  "format": "prettier --write src/",
+  "format": "prettier --write --loglevel warn \"src/**/*.{js,ts,json,tsx,css,less,vue,html,md}\"",
+  // 样式规范检查
+  "style": "stylelint --fix \"**/*.{vue,less,postcss,css,scss}\" --cache --cache-location node_modules/.cache/stylelint/",
   // 单元测试
   "test:unit": "vitest",
   // husky 初始化
   "prepare": "husky",
+  // 快速生成统一规范的模块
+  "plop": "plop",
+  // 检测可更新依赖
+  "npm-check": "npx npm-check-updates -i --format group",
   // 标准版本发布
   "release": "standard-version"
-  // 检测可更新依赖
-  "npm:check": "npx npm-check-updates",
-  // 快速生成统一规范的模块
-  "p": "plop"
 },
 ```

@@ -12,7 +12,7 @@ Search 组件位于 [src/components/Search](https://github.com/syh-micro-build/m
 
 ### 基础用法
 
-更复杂例子，请[在线预览](https://admin.mbuild.top/components/search)
+更复杂例子，请[在线预览](https://admin.mbuild.top/#/components/search)
 
 ```vue
 <script setup lang="ts">

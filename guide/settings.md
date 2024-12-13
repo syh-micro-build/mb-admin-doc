@@ -14,7 +14,7 @@
 
 也许你会疑惑，为什么会有多个环境变量？
 
-以 `生产环境` 为例，当我们执行 `pnpm run build:pro` 时，输出的包是用于线上环境的，所以代码都应该是压缩，我们需要删除掉代码中的 `console.log` 和 `degubber`，保证打包后代码的整洁度和不可见性。而其他环境，所以应该保留 `console.log` 和 `degubber` 用于调试，这样才能快速定位到问题所在。
+以 `生产环境` 为例，当我们执行 `npm run build pro` 时，输出的包是用于线上环境的，所以代码都应该是压缩，我们需要删除掉代码中的 `console.log` 和 `degubber`，保证打包后代码的整洁度和不可见性。而其他环境，所以应该保留 `console.log` 和 `degubber` 用于调试，这样才能快速定位到问题所在。
 
 所以环境变量的作用就是为了，在不同环境下有不同的表现。
 
@@ -36,16 +36,34 @@ console.log(import.meta.env.VITE_APP_TITLE)
 
 ```bash
 # 环境
-NODE_ENV = development
+VITE_NODE_ENV=development
 
 # 接口前缀
-VITE_API_BASEPATH = base
+VITE_API_BASE_PATH=
 
 # 打包路径
-VITE_BASE_PATH = /
+VITE_BASE_PATH=/
 
 # 标题
-VITE_APP_TITLE = MicroBuild
+VITE_APP_TITLE=MicroBuild
+
+# 是否开启动态路由
+VITE_APP_DYNAMIC_ROUTER=true
+
+# 是否开启hash路由
+VITE_APP_HASH_ROUTER=false
+
+# 是否全量引入element-plus样式
+VITE_USE_ALL_ELEMENT_PLUS_STYLE=true
+
+# 是否开启mock
+VITE_USE_MOCK=true
+
+# 是否使用在线图标
+VITE_USE_ONLINE_ICON=true
+
+# 是否隐藏全局设置按钮
+VITE_HIDE_GLOBAL_SETTING=false
 ```
 
 ### .env.dev
@@ -54,29 +72,52 @@ VITE_APP_TITLE = MicroBuild
 
 ```bash
 # 环境
-NODE_ENV = production
+VITE_NODE_ENV=production
 
 # 接口前缀
-VITE_API_BASEPATH = dev
+VITE_API_BASE_PATH=
 
 # 打包路径
-VITE_BASE_PATH = /dist-dev/
+VITE_BASE_PATH=/dist-dev/
 
 # 是否删除debugger
-VITE_DROP_DEBUGGER = false
+VITE_DROP_DEBUGGER=false
 
 # 是否删除console.log
-VITE_DROP_CONSOLE = false
+VITE_DROP_CONSOLE=false
 
 # 是否sourcemap
-VITE_SOURCEMAP = true
+VITE_SOURCEMAP=true
 
 # 输出路径
-VITE_OUT_DIR = dist-dev
+VITE_OUT_DIR=dist-dev
 
 # 标题
-VITE_APP_TITLE = MicroBuild
+VITE_APP_TITLE=MicroBuild
 
+# 是否开启动态路由
+VITE_APP_DYNAMIC_ROUTER=true
+
+# 是否开启hash路由
+VITE_APP_HASH_ROUTER=false
+
+# 是否包分析
+VITE_USE_BUNDLE_ANALYZER=false
+
+# 是否全量引入element-plus样式
+VITE_USE_ALL_ELEMENT_PLUS_STYLE=false
+
+# 是否开启mock
+VITE_USE_MOCK=true
+
+# 是否切割css
+VITE_USE_CSS_SPLIT=true
+
+# 是否使用在线图标
+VITE_USE_ONLINE_ICON=true
+
+# 是否隐藏全局设置按钮
+VITE_HIDE_GLOBAL_SETTING=false
 ```
 
 ### .env.test
@@ -85,26 +126,52 @@ VITE_APP_TITLE = MicroBuild
 
 ```bash
 # 环境
-NODE_ENV = production
+VITE_NODE_ENV=production
 
 # 接口前缀
-VITE_API_BASEPATH = test
+VITE_API_BASE_PATH=
 
 # 打包路径
-VITE_BASE_PATH = /dist-test/
+VITE_BASE_PATH=/dist-test/
 
 # 是否删除debugger
-VITE_DROP_DEBUGGER = false
+VITE_DROP_DEBUGGER=false
 
 # 是否删除console.log
-VITE_DROP_CONSOLE = false
+VITE_DROP_CONSOLE=false
 
 # 是否sourcemap
-VITE_SOURCEMAP = true
+VITE_SOURCEMAP=true
 
 # 输出路径
-VITE_OUT_DIR = dist-test
+VITE_OUT_DIR=dist-test
 
+# 标题
+VITE_APP_TITLE=MicroBuild
+
+# 是否开启动态路由
+VITE_APP_DYNAMIC_ROUTER=true
+
+# 是否开启hash路由
+VITE_APP_HASH_ROUTER=false
+
+# 是否包分析
+VITE_USE_BUNDLE_ANALYZER=false
+
+# 是否全量引入element-plus样式
+VITE_USE_ALL_ELEMENT_PLUS_STYLE=false
+
+# 是否开启mock
+VITE_USE_MOCK=true
+
+# 是否切割css
+VITE_USE_CSS_SPLIT=false
+
+# 是否使用在线图标
+VITE_USE_ONLINE_ICON=true
+
+# 是否隐藏全局设置按钮
+VITE_HIDE_GLOBAL_SETTING=false
 ```
 
 ### .env.pro
@@ -113,29 +180,52 @@ VITE_OUT_DIR = dist-test
 
 ```bash
 # 环境
-NODE_ENV = production
+VITE_NODE_ENV=production
 
 # 接口前缀
-VITE_API_BASEPATH = pro
+VITE_API_BASE_PATH=
 
 # 打包路径
-VITE_BASE_PATH = /
+VITE_BASE_PATH=/
 
 # 是否删除debugger
-VITE_DROP_DEBUGGER = true
+VITE_DROP_DEBUGGER=true
 
 # 是否删除console.log
-VITE_DROP_CONSOLE = true
+VITE_DROP_CONSOLE=true
 
 # 是否sourcemap
-VITE_SOURCEMAP = false
+VITE_SOURCEMAP=false
 
 # 输出路径
-VITE_OUT_DIR = dist-pro
+VITE_OUT_DIR=dist-pro
 
 # 标题
-VITE_APP_TITLE = MicroBuild
+VITE_APP_TITLE=MicroBuild
 
+# 是否开启动态路由
+VITE_APP_DYNAMIC_ROUTER=true
+
+# 是否开启hash路由
+VITE_APP_HASH_ROUTER=false
+
+# 是否包分析
+VITE_USE_BUNDLE_ANALYZER=true
+
+# 是否全量引入element-plus样式
+VITE_USE_ALL_ELEMENT_PLUS_STYLE=false
+
+# 是否开启mock
+VITE_USE_MOCK=true
+
+# 是否切割css
+VITE_USE_CSS_SPLIT=true
+
+# 是否使用在线图标
+VITE_USE_ONLINE_ICON=true
+
+# 是否隐藏全局设置按钮
+VITE_HIDE_GLOBAL_SETTING=false
 ```
 
 ## 项目及主题配置
@@ -155,63 +245,73 @@ VITE_APP_TITLE = MicroBuild
 修改完之后，会添加到全局的状态管理中，方便其他地方使用。
 
 ```js
-export const appModules: AppState = {
-  sizeMap: ['default', 'large', 'small'],
-  mobile: false, // 是否是移动端
-  title: import.meta.env.VITE_APP_TITLE as string, // 标题
-  pageLoading: false, // 路由跳转loading
 
-  breadcrumb: true, // 面包屑
-  breadcrumbIcon: true, // 面包屑图标
-  collapse: false, // 折叠菜单
-  hamburger: true, // 折叠图标
-  screenfull: true, // 全屏图标
-  size: true, // 尺寸图标
-  tagsView: true, // 标签页
-  logo: true, // logo
-  fixedHeader: true, // 固定toolheader
-  footer: true, // 显示页脚
-  greyMode: false, // 是否开始灰色模式，用于特殊悼念日
+export const useAppStore = defineStore('app', {
+  state: (): AppState => {
+    return {
+      sizeMap: ['default', 'large', 'small'],
+      mobile: false, // 是否是移动端
+      title: import.meta.env.VITE_APP_TITLE, // 标题
+      pageLoading: false, // 路由跳转loading
+      breadcrumb: true, // 面包屑
+      breadcrumbIcon: true, // 面包屑图标
+      collapse: false, // 折叠菜单
+      uniqueOpened: false, // 是否只保持一个子菜单的展开
+      hamburger: true, // 折叠图标
+      screenfull: true, // 全屏图标
+      size: true, // 尺寸图标
+      locale: true, // 多语言图标
+      tagsView: true, // 标签页
+      tagsViewIcon: true, // 是否显示标签图标
+      logo: true, // logo
+      fixedHeader: true, // 固定toolheader
+      footer: true, // 显示页脚
+      greyMode: false, // 是否开始灰色模式，用于特殊悼念日
+      dynamicRouter: import.meta.env.VITE_APP_DYNAMIC_ROUTER === 'true', // 是否动态路由
+      serverDynamicRouter: true, // 是否服务端渲染动态路由
+      fixedMenu: false, // 是否固定菜单
 
-  layout: wsCache.get('layout') || 'classic', // layout布局
-  isDark: wsCache.get('isDark') || false, // 是否是暗黑模式
-  currentSize: wsCache.get('default') || 'default', // 组件尺寸
-  theme: wsCache.get('theme') || {
-    // 主题色
-    elColorPrimary: '#409eff',
-    // 左侧菜单边框颜色
-    leftMenuBorderColor: 'inherit',
-    // 左侧菜单背景颜色
-    leftMenuBgColor: '#001529',
-    // 左侧菜单浅色背景颜色
-    leftMenuBgLightColor: '#0f2438',
-    // 左侧菜单选中背景颜色
-    leftMenuBgActiveColor: 'var(--el-color-primary)',
-    // 左侧菜单收起选中背景颜色
-    leftMenuCollapseBgActiveColor: 'var(--el-color-primary)',
-    // 左侧菜单字体颜色
-    leftMenuTextColor: '#bfcbd9',
-    // 左侧菜单选中字体颜色
-    leftMenuTextActiveColor: '#fff',
-    // logo字体颜色
-    logoTitleTextColor: '#fff',
-    // logo边框颜色
-    logoBorderColor: 'inherit',
-    // 头部背景颜色
-    topHeaderBgColor: '#fff',
-    // 头部字体颜色
-    topHeaderTextColor: 'inherit',
-    // 头部悬停颜色
-    topHeaderHoverColor: '#f6f6f6',
-    // 头部边框颜色
-    topToolBorderColor: '#eee'
+      layout: 'classic', // layout布局
+      isDark: false, // 是否是暗黑模式
+      currentSize: 'default', // 组件尺寸
+      theme: {
+        // 主题色
+        elColorPrimary: '#409eff',
+        // 左侧菜单边框颜色
+        leftMenuBorderColor: 'inherit',
+        // 左侧菜单背景颜色
+        leftMenuBgColor: '#001529',
+        // 左侧菜单浅色背景颜色
+        leftMenuBgLightColor: '#0f2438',
+        // 左侧菜单选中背景颜色
+        leftMenuBgActiveColor: 'var(--el-color-primary)',
+        // 左侧菜单收起选中背景颜色
+        leftMenuCollapseBgActiveColor: 'var(--el-color-primary)',
+        // 左侧菜单字体颜色
+        leftMenuTextColor: '#bfcbd9',
+        // 左侧菜单选中字体颜色
+        leftMenuTextActiveColor: '#fff',
+        // logo字体颜色
+        logoTitleTextColor: '#fff',
+        // logo边框颜色
+        logoBorderColor: 'inherit',
+        // 头部背景颜色
+        topHeaderBgColor: '#fff',
+        // 头部字体颜色
+        topHeaderTextColor: 'inherit',
+        // 头部悬停颜色
+        topHeaderHoverColor: '#f6f6f6',
+        // 头部边框颜色
+        topToolBorderColor: '#eee'
+      }
+    }
   }
-}
+})
 ```
 
 ### 如何添加新属性
 
-如果想要添加新的全局配置属性，需要在 [src/stores/app.ts](https://github.com/syh-micro-build/mb-admin/blob/main/src/stores/app.ts) 中 `AppState` 添加对应的类型，并在 `appModules` 对象中，赋予新属性的默认值。
+如果想要添加新的全局配置属性，需要在 [src/stores/app.ts](https://github.com/syh-micro-build/mb-admin/blob/main/src/stores/app.ts) 中 `AppState` 添加对应的类型，并在 `state` 对象中，赋予新属性的默认值。
 
 ## 样式配置
 

@@ -246,6 +246,14 @@ export default defineConfig({
               link: '/components/editor',
             },
             {
+              text: 'JsonEditor JSON编辑器组件',
+              link: '/components/json-editor',
+            },
+            {
+              text: 'CodeEditor 代码编辑器组件',
+              link: '/components/code-editor',
+            },
+            {
               text: 'Search 查询组件',
               link: '/components/search',
             },
@@ -292,10 +300,6 @@ export default defineConfig({
             {
               text: 'Footer 页脚组件',
               link: '/components/footer',
-            },
-            {
-              text: 'JsonEditor JSON编辑器组件',
-              link: '/components/json-editor',
             },
             {
               text: '图标选择器组件',

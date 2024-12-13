@@ -11,7 +11,6 @@
 ```bash
 .
 ├── index.less # 入口
-├── theme.less # 主题相关
 ├── var.css  # css变量
 └── variables.module.less # less变量
 

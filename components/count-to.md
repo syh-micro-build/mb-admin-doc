@@ -6,7 +6,7 @@ CountTo 组件位于 [src/components/CountTo](https://github.com/syh-micro-build
 
 ## 用法
 
-更复杂点的例子，请[在线预览](https://admin.mbuild.top/components/count-to)
+更复杂点的例子，请[在线预览](https://admin.mbuild.top/#/components/count-to)
 
 ```vue
 <script setup lang="ts">

@@ -8,7 +8,7 @@ Descriptions 组件位于 [src/components/Descriptions](https://github.com/syh-m
 
 ## 用法
 
-更复杂点的例子，请[在线预览](https://admin.mbuild.top/components/descriptions)
+更复杂点的例子，请[在线预览](https://admin.mbuild.top/#/components/descriptions)
 
 ```vue
 <script setup lang="tsx">

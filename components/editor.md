@@ -10,6 +10,8 @@ Editor 组件位于 [src/components/Editor](https://github.com/syh-micro-build/m
 
 ## 用法
 
+目前支持的富文本组件，你可以在 [在线预览](https://admin.mbuild.top/#/components/editor-demo/editor) 中看到。
+
 ```vue
 <script setup lang="ts">
 import { Editor } from '@/components/Editor'

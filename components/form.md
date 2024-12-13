@@ -10,7 +10,7 @@ Form 组件位于 [src/components/Form](https://github.com/syh-micro-build/mb-ad
 
 ## 用法
 
-目前支持的表单组件，你可以在 [在线预览](https://admin.mbuild.top/components/form/default-form) 中看到。
+目前支持的表单组件，你可以在 [在线预览](https://admin.mbuild.top/#/components/form/default-form) 中看到。
 
 ### 基础用法
 
@@ -38,7 +38,7 @@ const schema = reactive<FormSchema[]>([
 
 对于复杂的场景，可以配合 `useForm` 来使用。
 
-如果想看更复杂点的例子，请[在线预览](https://admin.mbuild.top/components/form/use-form)
+如果想看更复杂点的例子，请[在线预览](https://admin.mbuild.top/#/components/form/use-form)
 
 ```vue
 <script setup lang="tsx">

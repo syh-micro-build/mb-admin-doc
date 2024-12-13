@@ -8,8 +8,9 @@ JsonEditor 组件位于 [src/components/JsonEditor](https://github.com/syh-micro
 
 ## 用法
 
+目前支持的JSON编辑器组件，你可以在 [在线预览](https://admin.mbuild.top/#/components/editor-demo/json-editor) 中看到。
+
 ```vue
-<script setup lang="ts">
 <script setup lang="ts">
 import { ContentWrap } from '@/components/ContentWrap'
 import { JsonEditor } from '@/components/JsonEditor'
